@@ -3,7 +3,6 @@
   <head>
     <title>Contador</title>
     <style>
-
       body {
         background: grey;
         font-family: arial;
@@ -32,8 +31,20 @@
       <p id="numero">0</p>
       <p>
         <button>menos</button>
-        <button>mais</button>
+        <button onclick="mais()">mais</button>
       </p>
     </div>
+    <script>
+      function mais() {
+        // pegar o número
+        var numero = parseInt(document.getElementById("numero").innerText)
+        
+        // somar mais 1
+        numero = numero + 1
+
+        // atualizar o valor
+        document.getElementById("numero").innerText = numero
+      }
+    </script>
   </body>
 </html>
