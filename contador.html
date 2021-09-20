@@ -2,9 +2,38 @@
 <html>
   <head>
     <title>Contador</title>
+    <style>
+
+      body {
+        background: grey;
+        font-family: arial;
+        text-align: center;
+      }
+
+      div {
+        background: white;
+        max-width: 300px;
+        padding: 20px;
+        margin: 0 auto;
+      }
+
+      #numero {
+        font-size: 100px;
+      }
+
+      button {
+        padding: 10px 20px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Olá, mundo!!</h1>
-    <p>Novo parágrafo.</p>
+    <div>
+      <h1>Contador</h1>
+      <p id="numero">0</p>
+      <p>
+        <button>menos</button>
+        <button>mais</button>
+      </p>
+    </div>
   </body>
 </html>
